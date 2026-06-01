@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VLSI — John</title>
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-additions.css">
+  </head>
+  <body data-bs-theme="dark">
+
+    <div class="nav nav-overlay">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="index.html" class="hover-target">Home</a></li>
+          <li class="nav__list-item"><a href="pcb.html" class="hover-target">PCB Design</a></li>
+          <li class="nav__list-item"><a href="digital-marketing.html" class="hover-target">Digital Marketing</a></li>
+          <li class="nav__list-item active-nav"><a href="vlsi.html" class="hover-target">VLSI</a></li>
+          <li class="nav__list-item"><a href="index.html#contact" class="hover-target">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav id="navbar" class="position-absolute">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle"><span></span></label>
+    </nav>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-3 position-fixed z-1 h-100">
+          <div class="sidebar sidebar-compact p-4 p-lg-5 vh-100 d-flex flex-column position-relative">
+            <a href="index.html" class="logo mb-0 text-decoration-none">John.</a>
+            <p class="bio mt-4 d-none d-lg-block" style="max-width: 200px;">
+              VLSI — RTL DESIGN, SYNTHESIS, AND PHYSICAL DESIGN.
+            </p>
+            <div class="social-icons mt-auto mb-4 d-none d-lg-flex flex-column">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="d-none d-lg-block mb-4">
+              <p class="introduction mb-3">ON THIS PAGE</p>
+              <ul class="list-unstyled" style="font-size:13px; color: var(--text-lighter);">
+                <li class="mb-2"><a href="#projects" class="text-decoration-none" style="color:inherit">→ Projects</a></li>
+                <li class="mb-2"><a href="#code" class="text-decoration-none" style="color:inherit">→ RTL Code</a></li>
+                <li class="mb-2"><a href="#docs" class="text-decoration-none" style="color:inherit">→ Reports</a></li>
+                <li class="mb-2"><a href="#bom" class="text-decoration-none" style="color:inherit">→ Cell Library Table</a></li>
+              </ul>
+            </div>
+            <div class="personal-info d-none d-lg-flex">
+              <p class="job-title mb-2">VLSI / DIGITAL DESIGN</p>
+              <p class="location">BANGALORE, INDIA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="col-lg-9 offset-lg-3">
+          <div class="pt-4 pt-lg-5 px-4 px-lg-5">
+
+            <!-- Page Header -->
+            <div class="page-header" data-aos="fade-up">
+              <a href="index.html" class="breadcrumb-back"><i class="fas fa-arrow-left"></i> Back to Home</a>
+              <span class="introduction mb-3 d-block">SILICON DESIGN</span>
+              <h1 class="name txt-fx slide-up text-uppercase">VLSI</h1>
+              <p class="description mt-4">
+                RTL design, synthesis flows, timing closure, and physical design — from logic to layout.
+              </p>
+            </div>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="py-5 my-3">
+              <div class="row mb-4" data-aos="fade-up">
+                <div class="col">
+                  <span class="introduction mb-3 d-block">FEATURED WORK</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">Projects</h2>
+                </div>
+              </div>
+
+              <div class="project-card" data-aos="fade-up">
+                <span class="project-number">Project 01</span>
+                <h3>[VLSI Project Title Placeholder]</h3>
+                <p>
+                  Describe the design — e.g., a 4-bit ALU in Verilog synthesized with Yosys, or an SRAM cell
+                  designed in Cadence Virtuoso. Include the target process node, tool chain used, and key results
+                  (area, power, timing).
+                </p>
+                <div class="domain-card__tags mt-3">
+                  <span class="domain-tag">Verilog</span>
+                  <span class="domain-tag">Synthesis</span>
+                  <span class="domain-tag">Cadence</span>
+                </div>
+              </div>
+
+              <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="project-number">Project 02</span>
+                <h3>[Project Title Placeholder]</h3>
+                <p>Brief description. Key metrics: area, power, clock frequency, process node.</p>
+                <div class="domain-card__tags mt-3">
+                  <span class="domain-tag">VHDL</span>
+                  <span class="domain-tag">FPGA</span>
+                  <span class="domain-tag">Timing Analysis</span>
+                </div>
+              </div>
+            </section>
+
+            <!-- RTL CODE -->
+            <section id="code" class="py-5 my-3">
+              <div class="row mb-4" data-aos="fade-up">
+                <div class="col">
+                  <span class="introduction mb-3 d-block">RTL SOURCE</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">Code</h2>
+                </div>
+              </div>
+
+              <div data-aos="fade-up">
+                <div class="code-block-header">
+                  <span class="code-block-label">4-bit Ripple Carry Adder — Verilog</span>
+                  <span class="code-block-lang">Verilog HDL</span>
+                </div>
+                <div class="code-block">module ripple_carry_adder (
+    input  [3:0] A,
+    input  [3:0] B,
+    input        Cin,
+    output [3:0] Sum,
+    output       Cout
+);
+    wire c1, c2, c3;
+
+    full_adder FA0 (.a(A[0]), .b(B[0]), .cin(Cin),  .sum(Sum[0]), .cout(c1));
+    full_adder FA1 (.a(A[1]), .b(B[1]), .cin(c1),   .sum(Sum[1]), .cout(c2));
+    full_adder FA2 (.a(A[2]), .b(B[2]), .cin(c2),   .sum(Sum[2]), .cout(c3));
+    full_adder FA3 (.a(A[3]), .b(B[3]), .cin(c3),   .sum(Sum[3]), .cout(Cout));
+endmodule</div>
+                <div class="mt-3 mb-5">
+                  <a href="https://github.com/yourusername/vlsi-designs" target="_blank" class="code-repo-link">
+                    <i class="fab fa-github"></i> View Full Repository on GitHub
+                  </a>
+                </div>
+              </div>
+
+              <div data-aos="fade-up">
+                <div class="code-block-header">
+                  <span class="code-block-label">[Project 2 RTL Snippet Placeholder]</span>
+                  <span class="code-block-lang">VHDL / SystemVerilog</span>
+                </div>
+                <div class="code-block">-- Paste your RTL snippet here
+-- Keep it representative — link the full repo below</div>
+                <div class="mt-3 mb-5">
+                  <a href="https://github.com/yourusername/project-2" target="_blank" class="code-repo-link">
+                    <i class="fab fa-github"></i> View Repository on GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- PDF REPORTS -->
+            <section id="docs" class="py-5 my-3">
+              <div class="row mb-4" data-aos="fade-up">
+                <div class="col">
+                  <span class="introduction mb-3 d-block">SYNTHESIS & TIMING REPORTS</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">Documentation</h2>
+                </div>
+              </div>
+
+              <div data-aos="fade-up">
+                <p class="mb-3" style="color: var(--text-lighter); font-size: 14px;">[Project 1] — Synthesis Report & STA Results</p>
+                <div class="pdf-embed-wrapper">
+                  <iframe src="docs/vlsi-synthesis-report.pdf" title="VLSI Synthesis Report">
+                    <div class="pdf-fallback">
+                      <i class="fas fa-file-pdf"></i>
+                      <p>Your browser cannot display this PDF inline.</p>
+                      <a href="docs/vlsi-synthesis-report.pdf" class="btn-pdf-download" download>
+                        <i class="fas fa-download"></i> Download PDF
+                      </a>
+                    </div>
+                  </iframe>
+                </div>
+                <div class="mt-3">
+                  <a href="docs/vlsi-synthesis-report.pdf" class="btn-pdf-download" download>
+                    <i class="fas fa-download"></i> Download Report PDF
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-5" data-aos="fade-up">
+                <p class="mb-3" style="color: var(--text-lighter); font-size: 14px;">[Project 2 Report Placeholder]</p>
+                <div class="pdf-fallback" style="border: 1px solid rgba(255,255,255,0.08);">
+                  <i class="fas fa-file-pdf"></i>
+                  <p>Upload your PDF to <code>docs/</code> and link it here.</p>
+                  <a href="#" class="btn-pdf-download"><i class="fas fa-download"></i> Download PDF</a>
+                </div>
+              </div>
+            </section>
+
+            <!-- CELL LIBRARY / RESOURCE TABLE (replaces BOM for VLSI) -->
+            <section id="bom" class="py-5 my-3 mb-5">
+              <div class="row mb-4" data-aos="fade-up">
+                <div class="col">
+                  <span class="introduction mb-3 d-block">CELL USAGE SUMMARY</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">Resource Table</h2>
+                  <p style="color: var(--text-lighter); font-size: 14px;">Post-synthesis cell and area breakdown — [Project 1]</p>
+                </div>
+              </div>
+
+              <div class="bom-section" data-aos="fade-up">
+                <table class="bom-table">
+                  <thead>
+                    <tr>
+                      <th>Cell Type</th>
+                      <th>Library Cell</th>
+                      <th>Instance Count</th>
+                      <th>Area (µm²)</th>
+                      <th>Drive Strength</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Full Adder</td>
+                      <td>FA1X</td>
+                      <td><span class="bom-qty">4</span></td>
+                      <td>12.6</td>
+                      <td>X1</td>
+                      <td>Critical path</td>
+                    </tr>
+                    <tr>
+                      <td>Buffer</td>
+                      <td>BUFX2</td>
+                      <td><span class="bom-qty">8</span></td>
+                      <td>4.2</td>
+                      <td>X2</td>
+                      <td>Clock tree</td>
+                    </tr>
+                    <tr>
+                      <td>D Flip-Flop</td>
+                      <td>DFFX1</td>
+                      <td><span class="bom-qty">—</span></td>
+                      <td>—</td>
+                      <td>X1</td>
+                      <td>Placeholder — fill from report</td>
+                    </tr>
+                    <tr>
+                      <td>AND Gate</td>
+                      <td>AND2X1</td>
+                      <td><span class="bom-qty">—</span></td>
+                      <td>—</td>
+                      <td>X1</td>
+                      <td>Placeholder</td>
+                    </tr>
+                    <tr>
+                      <td>OR Gate</td>
+                      <td>OR2X1</td>
+                      <td><span class="bom-qty">—</span></td>
+                      <td>—</td>
+                      <td>X1</td>
+                      <td>Placeholder</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

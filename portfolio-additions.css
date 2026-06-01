@@ -1,0 +1,292 @@
+/* =====================================================
+   PORTFOLIO ADDITIONS — paste at the end of style.css
+   ===================================================== */
+
+/* ----- Domain Cards (Homepage) ----- */
+.domain-card {
+  padding: 32px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.domain-card:hover {
+  border-color: var(--primary-color);
+  background: rgba(212, 48, 48, 0.04);
+}
+
+.domain-card .skill {
+  margin-bottom: 0;
+}
+
+.domain-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.domain-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-lighter);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 3px 10px;
+}
+
+.domain-card:hover .domain-tag {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.domain-card__cta .introduction {
+  transition: letter-spacing 0.3s ease;
+}
+
+.domain-card:hover .domain-card__cta .introduction {
+  letter-spacing: 2.5px;
+}
+
+/* ----- Sub-page: Page Header ----- */
+.page-header {
+  padding: 120px 0 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-header .breadcrumb-back {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.page-header .breadcrumb-back:hover {
+  color: var(--text-color);
+}
+
+/* ----- Sub-page: Project Card ----- */
+.project-card {
+  padding: 36px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 32px;
+  transition: border-color 0.3s;
+}
+
+.project-card:hover {
+  border-color: var(--primary-color);
+}
+
+.project-card .project-number {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: var(--text-lighter);
+  line-height: 1.7;
+}
+
+/* ----- Code Block ----- */
+.code-block {
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid var(--primary-color);
+  padding: 24px 28px;
+  margin: 20px 0;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #ccc;
+  white-space: pre;
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.code-block-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.code-block-lang {
+  font-size: 11px;
+  color: var(--text-lighter);
+}
+
+.code-repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 2px;
+  transition: color 0.3s;
+}
+
+.code-repo-link:hover {
+  color: var(--primary-color);
+}
+
+/* ----- PDF Embed ----- */
+.pdf-embed-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.pdf-embed-wrapper iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  display: block;
+}
+
+.pdf-fallback {
+  padding: 40px 32px;
+  text-align: center;
+  background: #0d0d0d;
+}
+
+.pdf-fallback i {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pdf-fallback p {
+  color: var(--text-lighter);
+  margin-bottom: 20px;
+}
+
+.btn-pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-pdf-download:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+/* ----- BOM Table ----- */
+.bom-section {
+  overflow-x: auto;
+}
+
+.bom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.bom-table thead tr {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.bom-table thead th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+.bom-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.2s;
+}
+
+.bom-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.bom-table tbody td {
+  padding: 14px 16px;
+  color: var(--text-muted);
+  vertical-align: top;
+}
+
+.bom-table tbody td:first-child {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.bom-qty {
+  display: inline-block;
+  background: rgba(212, 48, 48, 0.15);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 10px;
+  min-width: 32px;
+  text-align: center;
+}
+
+/* ----- Section Divider Label ----- */
+.asset-section-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  margin-top: 48px;
+}
+
+.asset-section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+
+/* ----- Sub-page sidebar: compact ----- */
+.sidebar-compact .bio {
+  margin-top: 20px;
+}

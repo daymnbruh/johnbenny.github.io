@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>John - Engineer & Designer</title>
+
+    <!-- Third Party Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-bs-theme="dark">
+
+    <!-- ===== OVERLAY NAV ===== -->
+    <div class="nav nav-overlay">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
+          <li class="nav__list-item"><a href="pcb.html" class="hover-target">PCB Design</a></li>
+          <li class="nav__list-item"><a href="digital-marketing.html" class="hover-target">Digital Marketing</a></li>
+          <li class="nav__list-item"><a href="vlsi.html" class="hover-target">VLSI</a></li>
+          <li class="nav__list-item"><a href="#contact" class="hover-target">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav id="navbar" class="position-absolute">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle">
+        <span></span>
+      </label>
+    </nav>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+
+        <!-- ===== SIDEBAR ===== -->
+        <div class="col-lg-3 position-fixed z-1 h-100" data-aos="slide-right" data-aos-delay="200">
+          <div class="sidebar p-4 p-lg-5 vh-100 d-flex flex-column position-relative">
+            <a href="index.html" class="logo mb-0 text-decoration-none">John.</a>
+            <p class="bio mt-4 d-none d-lg-block" style="max-width: 200px;">
+              ENGINEER, PCB DESIGNER, AND DIGITAL MARKETER — BUILDING THINGS THAT WORK AND MATTER.
+            </p>
+            <p style="max-width: 200px;">Free HTML Template by <a href="https://templatesjungle.com/" target="_blank" class="text-decoration-none">TemplatesJungle</a></p>
+
+            <div class="social-icons mt-auto mb-4 d-none d-lg-flex flex-column">
+              <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="personal-info d-none d-lg-flex">
+              <p class="job-title mb-2">PCB / VLSI / DIGITAL MARKETING</p>
+              <p class="location">BANGALORE, INDIA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <div class="col-lg-9 offset-lg-3">
+          <div class="row">
+
+            <!-- Hero / Banner -->
+            <div id="intro" class="col-lg-8 position-relative d-flex flex-column align-items-center">
+              <div class="pt-4 pt-lg-5 px-4 px-lg-5 w-100 mt-5">
+                <div class="swiper banner-slider slide-in mt-5 mt-lg-0">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">INTRODUCTION</span>
+                        <h2 class="name mb-4 txt-fx slide-up">JOHN</h2>
+                        <p class="description mb-4">
+                          Engineering student with a passion for electronics, silicon design, and digital strategy.
+                        </p>
+                        <a href="#domains" class="cta-link d-inline-block mb-5">View my work.</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">Hardware Design</span>
+                        <h2 class="name mb-4 txt-fx slide-up">PCB CRAFT</h2>
+                        <p class="description mb-4">
+                          Schematic to board — STM32-based designs, power electronics, and embedded systems.
+                        </p>
+                        <a href="pcb.html" class="cta-link d-inline-block mb-5">Explore PCB work.</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">Silicon Design</span>
+                        <h2 class="name mb-4 txt-fx slide-up">VLSI</h2>
+                        <p class="description mb-4">
+                          RTL design, synthesis, and layout — from logic to gates.
+                        </p>
+                        <a href="vlsi.html" class="cta-link d-inline-block mb-5">Explore VLSI work.</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">Growth & Campaigns</span>
+                        <h2 class="name mb-4 txt-fx slide-up">MARKETING</h2>
+                        <p class="description mb-4">
+                          Strategy, content, and analytics to build brands that grow.
+                        </p>
+                        <a href="digital-marketing.html" class="cta-link d-inline-block mb-5">Explore campaigns.</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <nav class="section-nav swiper banner-nav-slider pt-3 pt-lg-4 px-4 px-lg-5 w-100"
+                data-aos="fade-up" data-aos-delay="600" data-aos-anchor-placement="top-bottom">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><span>01</span> INTRO</li>
+                  <li class="swiper-slide"><span>02</span> PCB</li>
+                  <li class="swiper-slide"><span>03</span> VLSI</li>
+                  <li class="swiper-slide"><span>04</span> MARKETING</li>
+                </ul>
+              </nav>
+
+              <div class="swiper image-slider" data-aos="fade-up" data-aos-delay="1000">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                      src="images/banner-image-2.jpg" alt="Hero">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                      src="images/banner-image-1.jpg" alt="Hero">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                      src="images/banner-image-3.jpg" alt="Hero">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                      src="images/banner-image-4.jpg" alt="Hero">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill sidebar (right col of hero) -->
+            <div class="col-lg-4">
+              <div class="p-4 p-lg-5 vh-100">
+                <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                  <span class="skill-number d-block">01</span>
+                  <h3>PCB Design</h3>
+                  <p>STM32-based circuits, power electronics, and embedded hardware.</p>
+                </div>
+                <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                  <span class="skill-number d-block">02</span>
+                  <h3>VLSI</h3>
+                  <p>RTL design, synthesis flows, and chip-level layout fundamentals.</p>
+                </div>
+                <div class="skill" data-aos="fade-up" data-aos-delay="600">
+                  <span class="skill-number d-block">03</span>
+                  <h3>Digital Marketing</h3>
+                  <p>Campaign strategy, SEO, analytics, and growth-focused content.</p>
+                </div>
+                <!-- Mobile-only CTA -->
+                <div class="d-lg-none mt-5">
+                  <hr class="sidebar-divider">
+                  <p class="job-title mb-2">PCB / VLSI / DIGITAL MARKETING</p>
+                  <p class="location mb-4">BANGALORE, INDIA</p>
+                  <a href="#domains" class="cta-button d-block text-center">VIEW MY WORK</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop CTA -->
+            <div class="col-lg-3 d-none d-lg-block position-fixed bottom-0 end-0 p-0" style="z-index: 8;">
+              <button class="btn-special w-100" data-aos="fade-up" data-aos-delay="800" data-aos-anchor-placement="top-bottom">
+                <span class="text-container">
+                  <span class="original-text">HIRE ME</span>
+                  <span class="hover-text">HIRE ME</span>
+                </span>
+              </button>
+            </div>
+
+            <!-- ===== DOMAIN CARDS SECTION ===== -->
+            <section id="domains" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+              <div class="row mb-5">
+                <div class="col-12" data-aos="fade-up">
+                  <span class="introduction mb-3 d-block">WHAT I DO</span>
+                  <h2 class="name mb-4 txt-fx slide-up text-uppercase">My Domains</h2>
+                  <p>Click a domain to explore projects, code, schematics, and documentation.</p>
+                </div>
+              </div>
+              <div class="row g-5">
+
+                <!-- Card 1: PCB Design -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <a href="pcb.html" class="text-decoration-none d-block h-100">
+                    <div class="domain-card h-100">
+                      <div class="skill mb-0">
+                        <span class="skill-number d-block">01</span>
+                        <h3>PCB Design</h3>
+                        <p>Schematic capture, layout, power electronics, and embedded systems using STM32 and KiCad/Altium.</p>
+                      </div>
+                      <div class="domain-card__tags mt-3">
+                        <span class="domain-tag">STM32</span>
+                        <span class="domain-tag">KiCad</span>
+                        <span class="domain-tag">Power Electronics</span>
+                      </div>
+                      <div class="domain-card__cta mt-4">
+                        <span class="introduction">View Projects →</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Card 2: Digital Marketing -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                  <a href="digital-marketing.html" class="text-decoration-none d-block h-100">
+                    <div class="domain-card h-100">
+                      <div class="skill mb-0">
+                        <span class="skill-number d-block">02</span>
+                        <h3>Digital Marketing</h3>
+                        <p>SEO, campaign strategy, analytics dashboards, and content pipelines that drive measurable growth.</p>
+                      </div>
+                      <div class="domain-card__tags mt-3">
+                        <span class="domain-tag">SEO</span>
+                        <span class="domain-tag">Analytics</span>
+                        <span class="domain-tag">Campaigns</span>
+                      </div>
+                      <div class="domain-card__cta mt-4">
+                        <span class="introduction">View Projects →</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Card 3: VLSI -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <a href="vlsi.html" class="text-decoration-none d-block h-100">
+                    <div class="domain-card h-100">
+                      <div class="skill mb-0">
+                        <span class="skill-number d-block">03</span>
+                        <h3>VLSI</h3>
+                        <p>RTL design in Verilog/VHDL, synthesis, timing analysis, and physical design fundamentals.</p>
+                      </div>
+                      <div class="domain-card__tags mt-3">
+                        <span class="domain-tag">Verilog</span>
+                        <span class="domain-tag">Synthesis</span>
+                        <span class="domain-tag">Layout</span>
+                      </div>
+                      <div class="domain-card__cta mt-4">
+                        <span class="introduction">View Projects →</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- ===== ABOUT SECTION ===== -->
+            <section id="about" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+              <div class="row d-flex flex-wrap" data-aos="fade-up">
+                <div class="col-lg-6 pb-5">
+                  <span class="introduction mb-3 d-block">BIODATA</span>
+                  <h2 class="name mb-4 txt-fx slide-up text-uppercase">Education</h2>
+                  <div class="data-info py-3">
+                    <span class="meta-date">2021 – Present</span>
+                    <h3 class="info-title">B.Tech in Electronics & Communication Engineering</h3>
+                    <p>Your University, Bangalore</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                  <h2 class="name mb-4 txt-fx slide-up text-uppercase">Interests</h2>
+                  <div class="data-info py-3">
+                    <span class="meta-date">Hardware</span>
+                    <h3 class="info-title">Embedded Systems & EV Technology</h3>
+                    <p>Designing control circuits and power systems for electric vehicles.</p>
+                  </div>
+                  <div class="data-info">
+                    <span class="meta-date">Software</span>
+                    <h3 class="info-title">Digital Design & Chip Architecture</h3>
+                    <p>RTL to GDS — exploring the full ASIC flow.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ===== CONTACT SECTION ===== -->
+            <section id="contact" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+              <div class="container">
+                <div class="row mb-5">
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <span class="introduction mb-3 d-block">GET IN TOUCH</span>
+                    <h2 class="name mb-4 txt-fx slide-up text-uppercase">Contact Me</h2>
+                    <p>Open to internships, collaborations, and interesting projects.</p>
+                  </div>
+                </div>
+                <div class="row d-flex g-5">
+                  <div class="col-lg-7" data-aos="fade-up">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="accordion" id="faqAccordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1" aria-expanded="true">
+                            Are you open to internships?
+                          </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Yes — I'm actively looking for internship and project collaboration opportunities in embedded systems, VLSI, and digital strategy.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false">
+                            What tools do you work with?
+                          </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            KiCad, Altium Designer, Keil µVision, Proteus, STM32CubeIDE, Cadence Virtuoso, and standard web analytics platforms.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="right-content" data-aos="fade-up">
+                      <div class="element-header align-right">
+                        <h3>Send me a message or collaboration idea.</h3>
+                      </div>
+                      <div class="contact-form py-4">
+                        <form id="form" class="form-group">
+                          <div class="pb-2"><input type="text" name="name" placeholder="Your Full Name" class="form-control"></div>
+                          <div class="pb-2"><input type="email" name="email" placeholder="Your Email Address" class="form-control"></div>
+                          <div class="pb-2"><textarea placeholder="Your Message" rows="6" class="form-control"></textarea></div>
+                          <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

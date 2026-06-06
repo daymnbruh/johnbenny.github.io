@@ -1,5 +1,5 @@
 /* =====================================================
-   PORTFOLIO ADDITIONS — paste at the end of style.css
+   PORTFOLIO ADDITIONS
    ===================================================== */
 
 /* ----- Domain Cards (Homepage) ----- */
@@ -15,9 +15,7 @@
   background: rgba(212, 48, 48, 0.04);
 }
 
-.domain-card .skill {
-  margin-bottom: 0;
-}
+.domain-card .skill { margin-bottom: 0; }
 
 .domain-card__tags {
   display: flex;
@@ -68,20 +66,31 @@
   margin-bottom: 24px;
 }
 
-.page-header .breadcrumb-back:hover {
-  color: var(--text-color);
-}
+.page-header .breadcrumb-back:hover { color: var(--text-color); }
 
-/* ----- Sub-page: Project Card ----- */
+/* ----- Project Card (listing pages) ----- */
 .project-card {
   padding: 36px 32px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 32px;
-  transition: border-color 0.3s;
+  margin-bottom: 24px;
+  transition: border-color 0.3s, background 0.3s;
 }
 
-.project-card:hover {
+/* clickable variant — used on pcb.html, vlsi.html, digital-marketing.html */
+.project-card--clickable:hover {
   border-color: var(--primary-color);
+  background: rgba(212, 48, 48, 0.03);
+}
+
+.project-card--clickable:hover .project-arrow {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+.project-arrow {
+  color: var(--text-lighter);
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .project-card .project-number {
@@ -137,10 +146,7 @@
   color: var(--primary-color);
 }
 
-.code-block-lang {
-  font-size: 11px;
-  color: var(--text-lighter);
-}
+.code-block-lang { font-size: 11px; color: var(--text-lighter); }
 
 .code-repo-link {
   display: inline-flex;
@@ -157,9 +163,7 @@
   transition: color 0.3s;
 }
 
-.code-repo-link:hover {
-  color: var(--primary-color);
-}
+.code-repo-link:hover { color: var(--primary-color); }
 
 /* ----- PDF Embed ----- */
 .pdf-embed-wrapper {
@@ -175,6 +179,11 @@
   display: block;
 }
 
+/* Mobile: shorter iframe */
+@media (max-width: 767px) {
+  .pdf-embed-wrapper iframe { height: 320px; }
+}
+
 .pdf-fallback {
   padding: 40px 32px;
   text-align: center;
@@ -188,10 +197,7 @@
   display: block;
 }
 
-.pdf-fallback p {
-  color: var(--text-lighter);
-  margin-bottom: 20px;
-}
+.pdf-fallback p { color: var(--text-lighter); margin-bottom: 20px; }
 
 .btn-pdf-download {
   display: inline-flex;
@@ -208,15 +214,10 @@
   transition: background 0.3s;
 }
 
-.btn-pdf-download:hover {
-  background: var(--primary-dark);
-  color: #fff;
-}
+.btn-pdf-download:hover { background: var(--primary-dark); color: #fff; }
 
 /* ----- BOM Table ----- */
-.bom-section {
-  overflow-x: auto;
-}
+.bom-section { overflow-x: auto; }
 
 .bom-table {
   width: 100%;
@@ -224,9 +225,7 @@
   font-size: 14px;
 }
 
-.bom-table thead tr {
-  border-bottom: 2px solid var(--primary-color);
-}
+.bom-table thead tr { border-bottom: 2px solid var(--primary-color); }
 
 .bom-table thead th {
   padding: 14px 16px;
@@ -244,9 +243,7 @@
   transition: background 0.2s;
 }
 
-.bom-table tbody tr:hover {
-  background: rgba(255, 255, 255, 0.03);
-}
+.bom-table tbody tr:hover { background: rgba(255, 255, 255, 0.03); }
 
 .bom-table tbody td {
   padding: 14px 16px;
@@ -254,10 +251,7 @@
   vertical-align: top;
 }
 
-.bom-table tbody td:first-child {
-  color: var(--text-color);
-  font-weight: 700;
-}
+.bom-table tbody td:first-child { color: var(--text-color); font-weight: 700; }
 
 .bom-qty {
   display: inline-block;
@@ -270,23 +264,92 @@
   text-align: center;
 }
 
-/* ----- Section Divider Label ----- */
-.asset-section-label {
-  display: flex;
-  align-items: center;
+/* ----- Image Gallery (Digital Marketing project pages) ----- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  margin-bottom: 24px;
-  margin-top: 48px;
-}
-
-.asset-section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: rgba(255,255,255,0.08);
-}
-
-/* ----- Sub-page sidebar: compact ----- */
-.sidebar-compact .bio {
   margin-top: 20px;
+}
+
+/* 3 columns on large screens */
+@media (min-width: 992px) {
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 1 column on small mobile */
+@media (max-width: 575px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0d0d0d;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.gallery-item:hover { border-color: var(--primary-color); }
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img { transform: scale(1.04); }
+
+/* Caption overlay on hover */
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption { transform: translateY(0); }
+
+/* Placeholder box shown before real images are added */
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-lighter);
+  gap: 10px;
+}
+
+.gallery-placeholder i { font-size: 28px; color: var(--primary-color); }
+.gallery-placeholder span { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+
+/* ----- Sub-page sidebar compact ----- */
+.sidebar-compact .bio { margin-top: 20px; }
+
+/* ----- Mobile tap fix for domain cards ----- */
+.domain-card {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.col-lg-4 > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
 }

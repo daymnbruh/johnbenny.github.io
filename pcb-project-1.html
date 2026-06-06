@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2000W Load Control System — John</title>
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-additions.css">
+  </head>
+  <body data-bs-theme="dark">
+
+    <div class="nav nav-overlay">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="index.html" class="hover-target">Home</a></li>
+          <li class="nav__list-item active-nav"><a href="pcb.html" class="hover-target">PCB Design</a></li>
+          <li class="nav__list-item"><a href="digital-marketing.html" class="hover-target">Digital Marketing</a></li>
+          <li class="nav__list-item"><a href="vlsi.html" class="hover-target">VLSI</a></li>
+          <li class="nav__list-item"><a href="index.html#contact" class="hover-target">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav id="navbar" class="position-absolute">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle"><span></span></label>
+    </nav>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-3 position-fixed z-1 h-100">
+          <div class="sidebar sidebar-compact p-4 p-lg-5 vh-100 d-flex flex-column position-relative">
+            <a href="index.html" class="logo mb-0 text-decoration-none">John.</a>
+            <p class="bio mt-4 d-none d-lg-block" style="max-width: 200px;">
+              PCB DESIGN — SCHEMATICS, LAYOUTS, AND EMBEDDED HARDWARE.
+            </p>
+            <div class="d-none d-lg-block mt-4">
+              <p class="introduction mb-3">ON THIS PAGE</p>
+              <ul class="list-unstyled" style="font-size:13px; color: var(--text-lighter);">
+                <li class="mb-2"><a href="#overview" class="text-decoration-none" style="color:inherit">→ Overview</a></li>
+                <li class="mb-2"><a href="#schematic" class="text-decoration-none" style="color:inherit">→ Schematic</a></li>
+                <li class="mb-2"><a href="#bom" class="text-decoration-none" style="color:inherit">→ Bill of Materials</a></li>
+              </ul>
+            </div>
+            <div class="social-icons mt-auto mb-4 d-none d-lg-flex flex-column">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="personal-info d-none d-lg-flex">
+              <p class="job-title mb-2">PCB / EMBEDDED DESIGN</p>
+              <p class="location">BANGALORE, INDIA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="col-lg-9 offset-lg-3">
+          <div class="pt-4 pt-lg-5 px-4 px-lg-5">
+
+            <!-- Page Header -->
+            <div class="page-header" data-aos="fade-up">
+              <a href="pcb.html" class="breadcrumb-back"><i class="fas fa-arrow-left"></i> Back to PCB Projects</a>
+              <span class="introduction mb-3 d-block">PROJECT 01</span>
+              <h1 class="name txt-fx slide-up text-uppercase">2000W Load Control</h1>
+              <div class="domain-card__tags mt-4">
+                <span class="domain-tag">STM32G474</span>
+                <span class="domain-tag">Buck Converter</span>
+                <span class="domain-tag">LT3845AIFE</span>
+                <span class="domain-tag">Proteus</span>
+                <span class="domain-tag">Keil µVision</span>
+              </div>
+            </div>
+
+            <!-- OVERVIEW -->
+            <section id="overview" class="py-5 my-3">
+              <div class="row" data-aos="fade-up">
+                <div class="col-lg-8">
+                  <span class="introduction mb-3 d-block">ABOUT THIS PROJECT</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">Overview</h2>
+                  <p class="mt-4" style="color: var(--text-muted); font-size: 16px; line-height: 1.8;">
+                    STM32G474-based load controller featuring an LT3845AIFE synchronous buck controller,
+                    a high-current MOSFET bank, and closed-loop feedback. Designed in Proteus with
+                    firmware developed in Keil µVision.
+                  </p>
+                  <!-- Add more project description here -->
+                </div>
+              </div>
+            </section>
+
+            <!-- SCHEMATIC PDF -->
+            <section id="schematic" class="py-5 my-3">
+              <div class="row mb-4" data-aos="fade-up">
+                <div class="col">
+                  <span class="introduction mb-3 d-block">DESIGN FILES</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">Schematic</h2>
+                </div>
+              </div>
+
+              <div data-aos="fade-up">
+                <!-- 
+                  TO ADD YOUR PDF:
+                  1. Upload your PDF to a "docs" folder in your repo
+                  2. Replace "docs/project1-schematic.pdf" below with your actual filename
+                -->
+                <div class="pdf-embed-wrapper">
+                  <iframe src="docs/project1-schematic.pdf" title="2000W Load Control Schematic">
+                    <div class="pdf-fallback">
+                      <i class="fas fa-file-pdf"></i>
+                      <p>Your browser cannot display this PDF inline.</p>
+                      <a href="docs/project1-schematic.pdf" class="btn-pdf-download" download>
+                        <i class="fas fa-download"></i> Download Schematic PDF
+                      </a>
+                    </div>
+                  </iframe>
+                </div>
+                <div class="mt-3">
+                  <a href="docs/project1-schematic.pdf" class="btn-pdf-download" download>
+                    <i class="fas fa-download"></i> Download Schematic PDF
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- BOM -->
+            <section id="bom" class="py-5 my-3 mb-5">
+              <div class="row mb-4" data-aos="fade-up">
+                <div class="col">
+                  <span class="introduction mb-3 d-block">BILL OF MATERIALS</span>
+                  <h2 class="name txt-fx slide-up text-uppercase">BOM</h2>
+                  <p style="color: var(--text-lighter); font-size: 14px;">2000W Load Control System — Revision 1.0</p>
+                </div>
+              </div>
+
+              <div class="bom-section" data-aos="fade-up">
+                <table class="bom-table">
+                  <thead>
+                    <tr>
+                      <th>Reference</th>
+                      <th>Component</th>
+                      <th>Value / Part #</th>
+                      <th>Package</th>
+                      <th>Qty</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>U1</td>
+                      <td>Microcontroller</td>
+                      <td>STM32G474RET6</td>
+                      <td>LQFP-64</td>
+                      <td><span class="bom-qty">1</span></td>
+                      <td>ARM Cortex-M4, 170 MHz</td>
+                    </tr>
+                    <tr>
+                      <td>U2</td>
+                      <td>Buck Controller</td>
+                      <td>LT3845AIFE</td>
+                      <td>TSSOP-28</td>
+                      <td><span class="bom-qty">1</span></td>
+                      <td>High-voltage synchronous step-down</td>
+                    </tr>
+                    <tr>
+                      <td>Q1–Q4</td>
+                      <td>N-ch MOSFET</td>
+                      <td>IRF540N</td>
+                      <td>TO-220</td>
+                      <td><span class="bom-qty">4</span></td>
+                      <td>100V, 33A — parallel bank</td>
+                    </tr>
+                    <tr>
+                      <td>L1</td>
+                      <td>Power Inductor</td>
+                      <td>22 µH / 15 A</td>
+                      <td>Through-hole</td>
+                      <td><span class="bom-qty">1</span></td>
+                      <td>Custom wound or off-shelf</td>
+                    </tr>
+                    <tr>
+                      <td>C1–C6</td>
+                      <td>Bulk Capacitor</td>
+                      <td>100 µF / 63 V</td>
+                      <td>Electrolytic ⌀10×20</td>
+                      <td><span class="bom-qty">6</span></td>
+                      <td>Input & output filter</td>
+                    </tr>
+                    <tr>
+                      <td>C7–C12</td>
+                      <td>Decoupling Cap</td>
+                      <td>100 nF / 50 V</td>
+                      <td>0402</td>
+                      <td><span class="bom-qty">6</span></td>
+                      <td>MCU power rails</td>
+                    </tr>
+                    <tr>
+                      <td>D1–D2</td>
+                      <td>TVS Diode</td>
+                      <td>SMBJ30A</td>
+                      <td>SMB</td>
+                      <td><span class="bom-qty">2</span></td>
+                      <td>Transient protection</td>
+                    </tr>
+                    <tr>
+                      <td>R1–R4</td>
+                      <td>Gate Resistor</td>
+                      <td>10 Ω</td>
+                      <td>0402</td>
+                      <td><span class="bom-qty">4</span></td>
+                      <td>Per MOSFET gate</td>
+                    </tr>
+                    <tr>
+                      <td>J1</td>
+                      <td>Power Connector</td>
+                      <td>XT60-M</td>
+                      <td>Through-hole</td>
+                      <td><span class="bom-qty">1</span></td>
+                      <td>High-current input</td>
+                    </tr>
+                    <!-- ADD MORE ROWS HERE -->
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
